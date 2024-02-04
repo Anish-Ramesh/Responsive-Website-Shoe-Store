@@ -9,8 +9,8 @@ A Responsive Website Shoe Store created with HTML. It delivers an engaging and e
 # How To Run It Locally:
 *  Download the Code
 *  Save it in .html extension
-*  open the file from file location 
-*  you are good to go!
+*  Open the file from file location 
+*  You are good to go!
 
 # Features:
 * Responsive Design: The website is designed to be accessible and visually appealing on devices of all sizes, including desktops, tablets, and smartphones.
