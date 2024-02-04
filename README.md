@@ -20,6 +20,6 @@ A Responsive Website Shoe Store created with HTML. It delivers an engaging and e
 # License
 * This project is licensed under the MIT License - see the LICENSE file for details.
 
-# How It Will Look When You Open It:
+# Preview Of Website:
 ![image](https://github.com/Anish-Ramesh/Responsive-Website-Shoe-Store/assets/140417012/d62d196e-0123-43b8-8a2b-df0a14d8f466)
 
