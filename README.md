@@ -7,7 +7,10 @@ A Responsive Website Shoe Store created with HTML. It delivers an engaging and e
 * JavaScript: Programming language for enhancing user interactions and dynamic content.
 
 # How To Run It Locally:
-* Download the Code, Save it in .html extension, then open the file from file location then you will see the result of shoe store which will be a responsive shoe store
+*  Download the Code
+*  Save it in .html extension
+*  open the file from file location 
+*  you are good to go!
 
 # Features:
 * Responsive Design: The website is designed to be accessible and visually appealing on devices of all sizes, including desktops, tablets, and smartphones.
