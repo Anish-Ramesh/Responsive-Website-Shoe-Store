@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shoe Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('pair-men-s-shoes-wooden-floor_777078-2036.jpg');
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #info{
+            align-content: end;
+            display: inline-block;
+            border: 2px solid rgb(12, 220, 105);
+        }
+        
+        nav {
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .shoe {
+            border: 1px solid black;
+            margin: 2rem 2rem;
+            border-radius: 5px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .shoe img {
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Shoe Shop</h1>
+        <div id="info">
+            <i class="fa fa-shopping-cart"><div id="cart">Cart: 0 items</div></i>   
+            <div id="totalAmount">Total Amount: $0.00</div>
+        </div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Men's Shoes</a>
+        <a href="#">Women's Shoes</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="shoe" id="shoe1">
+            <img src="ox-street-BWPqHZBhMVA-unsplash.jpg" alt="Shoe 1">
+            <h2>Stylish Sneaker</h2>
+            <p>Price: $49.99</p>
+            <button onclick="addToCart(49.99)">Add to Cart</button>
+        </div>
+        <div class="shoe" id="shoe2">
+            <img src=61cjejB7AlL._UY695_.jpg alt="Shoe 2">
+            <h2>Running Shoe</h2>
+            <p>Price: $59.99</p>
+            <button onclick="addToCart(59.99)">Add to Cart</button>
+        </div>
+        <div class="shoe" id="shoe3">
+            <img src="download.jpeg" alt="Shoe 3">
+            <h2>Casual Shoe</h2>
+            <p>Price: $39.99</p>
+            <button onclick="addToCart(39.99)">Add to Cart</button>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2023 Shoe Shop</p>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+        let totalAmount = 0;
+
+        function addToCart(price) {
+            cartCount++;
+            totalAmount += price;
+            updateCartDetails();
+        }
+
+        function updateCartDetails() {
+            const cartElement = document.getElementById('cart');
+            const totalAmountElement = document.getElementById('totalAmount');
+
+            cartElement.innerHTML = `Cart: ${cartCount} items`;
+            totalAmountElement.textContent = `Total Amount: $${totalAmount.toFixed(2)}`;
+        }
+
+        function openCartDetails() {
+            alert(`Cart: ${cartCount} items\nTotal Amount: $${totalAmount.toFixed(2)}`);
+        }
+    </script>
+</body>
+
+</html>
